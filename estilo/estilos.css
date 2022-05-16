@@ -59,7 +59,7 @@ img{
   height: 220px;
 }
 img:hover{
-  animation: seg 8s;
+  animation: seg 3s;
 }
 @keyframes seg{
   0%{
@@ -96,6 +96,7 @@ textarea{
   transform: scale(1,2);
   transition-property: all;
   transition-duration: 2s;
+  background-color: blue;
 }
 .division{
 display: grid;
