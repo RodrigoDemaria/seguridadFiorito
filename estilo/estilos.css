@@ -5,48 +5,18 @@
   font-size: 15px;
 }
 body{
-  background-color: rgb(171, 208, 230);
+  background-color: white;
 }
-/*
-header{
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(235, 227, 227);
-  height: 100px;
-  margin-top: 0px;
-  position: sticky;
-  top: 0px;
-  left: 0px;
-}
-nav{
-  display: flex;
-  align-items: flex-end;
-}
-*/
 ul li{
   list-style-type: none;
 }
-/*
-nav ul li{
-  display: inline-block;
-}
-nav ul li a{
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-ul li a{
-  display: flex;
-  margin: 15px;
-}
-*/
 .colbar{
   background-color: rgb(235, 227, 227);
 }
 p{
   color: black;
   padding: 20px;
-  margin: 50px 25px 50px 25px;
+  margin: 5px 25px 50px 25px;
   border: 50px;
 }
 .novMensuales{
@@ -64,50 +34,12 @@ footer{
 
 img{
   width: 220px;
-  height: 220px;
-}
-/*
-img:hover{
-  animation: seg 3s;
-}
-*/
-@keyframes seg{
-  0%{
-    border-radius: 25%;
-  }
-  50%{
-    transform: scale(2);
-  }
-}
-form{
-  width: 250px;
-  margin: auto;
-  padding: 10px 15px;
-  box-sizing: border-box;
-}
-input, textarea{
-  width: 350px;
-  margin-bottom: 15px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 15px;
-}
-textarea{
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 200px;
-  min-width: 100px;
-}
-#boton{
-  background-color: rgb(235, 227, 227);
-}
-#boton:hover{
-  cursor: pointer;
+  height: 300px;
 }
 .division{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows:   75px 250px 250px 500px 350px 175px;
+grid-template-rows: 50px 300px 250px 400px 500px 150px;
 grid-template-areas: 
 "header header header header header header"
 "galeria galeria galeria galeria galeria galeria"
@@ -118,43 +50,97 @@ grid-template-areas:
 }
 .header{
   grid-area: header;
+  background-color: rgb(235, 227, 227)
 }
 .galeria{
   grid-area: galeria;
-  background-color: rgb(171, 208, 230);
+  background-color: white;
+}
+h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(83, 78, 78);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 .politica{
   grid-area: politica;
-  background-color: rgb(171, 208, 230);
+  background-color: white;
 }
 .notas{
   grid-area: notas;
 }
+.notas{
+margin: 5px 10px 5px 10px;
+}
 .contacto{
   grid-area: contacto;
-  background-color: rgb(171, 208, 230);
-  height: auto;
-  background-image: url("../img/imagenfondo.jpg");
-  background-size: cover;
+  width: 550px;
+  height: 250;
+  margin: 10px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactouno{
+width: 100%;
+padding: 25px 25px;
+}
+h3{
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.contactodos{
+  display: flex;
+  flex-direction: column;
+}
+.contactouno label{
+  font-weight: 100;
+}
+.contacto input,
+.contactouno textarea{
+  width: 100%;
+  padding: 5px 0px 5px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid black ;
+  font-size: 10px;
+  font-weight: 100;
+}
+.contactouno textarea{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+}
+.boton{
+background-color: rgb(156, 218, 236);
+}
+.boton:hover{
+  background-color: rgb(187, 182, 182);
+}
+:focus{
+  outline: none;
 }
 .footer{
   grid-area: footer;
   height:auto;
   text-align: center;
-  font-style: italic;
+  font-size: 15px;
 }
-.galeriauno{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  object-fit: cover;
-  margin: 25px 25px 25px 25px;
+h4{
+  margin-left: 35px;
+  font-family: 'Times New Roman', Times, serif;
 }
-
 @media (max-width: 480px){
   .division{
-    display: grid;
-    gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -164,5 +150,31 @@ grid-template-areas:
     "notas"
     "contacto"
     "footer";
+    }
+}
+@media (max-width: 600px){
+  .division{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header header"
+    "galeria galeria"
+    "politica politica"
+    "notas notas"
+    "contacto contacto"
+    "footer contacto";
+    }
+}
+@media (max-width: 768px){
+  .division{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "galeria galeria galeria"
+    "politica politica politica"
+    "notas notas notas"
+    "contacto contacto contacto"
+    "footer footer footer";
     }
 }
