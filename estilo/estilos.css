@@ -7,89 +7,13 @@
 body{
   background-color: white;
 }
-ul li{
-  list-style-type: none;
-}
-.colbar{
-  background-color: rgb(235, 227, 227);
-}
-p{
-  color: black;
-  padding: 20px;
-  margin: 5px 25px 50px 25px;
-  border: 50px;
-}
-.novMensuales{
-  border: solid 1px black;
-  font-family: 'Times New Roman', Times, serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-footer{
-  background-color: rgb(235, 227, 227);
-  padding: 25px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-img{
-  width: 220px;
-  height: 300px;
-}
-.division{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 50px 300px 250px 400px 500px 150px;
-grid-template-areas: 
-"header header header header header header"
-"galeria galeria galeria galeria galeria galeria"
-"politica politica politica politica politica politica"
-"notas notas notas notas notas notas"
-"contacto contacto contacto contacto contacto contacto"
-"footer footer footer footer footer footer";
-}
-.header{
-  grid-area: header;
-  background-color: rgb(235, 227, 227)
-}
-.galeria{
-  grid-area: galeria;
-  background-color: white;
-}
 h2{
   font-size: 25px;
   font-weight: 600;
-  color: rgb(83, 78, 78);
+  color: rgb(148, 172, 224);
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 15px;
-}
-.politica{
-  grid-area: politica;
-  background-color: white;
-}
-.notas{
-  grid-area: notas;
-}
-.notas{
-margin: 5px 10px 5px 10px;
-}
-.contacto{
-  grid-area: contacto;
-  width: 550px;
-  height: 250;
-  margin: 10px;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  margin-right: auto;
-  margin-left: auto;
-}
-.contactouno{
-width: 100%;
-padding: 25px 25px;
 }
 h3{
   font-size: 25px;
@@ -97,6 +21,39 @@ h3{
   color: black;
   margin-bottom: 15px;
   text-align: center;
+}
+h4{
+  margin-left: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
+.colbar{
+  background-color: rgb(235, 227, 227);
+}
+img{
+  width: 220px;
+  height: 300px;
+}
+p{
+  color: black;
+  padding: 20px;
+  margin: 5px 25px 50px 25px;
+  border: 50px;
+}
+ul li{
+  list-style-type: none;
+}
+footer{
+  background-color: rgb(235, 227, 227);
+  padding: 25px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.contactouno{
+  width: 100%;
+  padding: 25px 25px;
 }
 .contactodos{
   display: flex;
@@ -121,7 +78,7 @@ h3{
   max-height: 90px;
 }
 .boton{
-background-color: rgb(156, 218, 236);
+  background-color: rgb(156, 218, 236);
 }
 .boton:hover{
   background-color: rgb(187, 182, 182);
@@ -129,16 +86,53 @@ background-color: rgb(156, 218, 236);
 :focus{
   outline: none;
 }
+.division{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 50px 300px 250px 400px 500px 150px;
+grid-template-areas: 
+"header header header header header header"
+"galeria galeria galeria galeria galeria galeria"
+"politica politica politica politica politica politica"
+"notas notas notas notas notas notas"
+"contacto contacto contacto contacto contacto contacto"
+"footer footer footer footer footer footer";
+}
+.header{
+  grid-area: header;
+  background-color: rgb(235, 227, 227)
+}
+.galeria{
+  grid-area: galeria;
+  background-color: white;
+}
+.politica{
+  grid-area: politica;
+  background-color: white;
+}
+.notas{
+  grid-area: notas;
+}
+.notas{
+margin: 5px 10px 5px 10px;
+}
+.contacto{
+  grid-area: contacto;
+  width: 550px;
+  height: 250;
+  margin: 10px;
+  display: flex;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
 .footer{
   grid-area: footer;
   height:auto;
   text-align: center;
   font-size: 15px;
 }
-h4{
-  margin-left: 35px;
-  font-family: 'Times New Roman', Times, serif;
-}
+
 @media (max-width: 480px){
   .division{
     grid-template-columns: 1fr;
