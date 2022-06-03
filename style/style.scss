@@ -1,0 +1,185 @@
+  h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(148, 172, 224);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  h4{
+    margin-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+  }
+  img{
+    width: 220px;
+    height: 350px;
+  }
+  p{
+    color: black;
+    padding: 20px;
+    margin: 5px 25px 50px 25px;
+    border: 50px;
+  }
+
+  @import "variable";
+  @import "repsec";
+  @import "contacto";
+
+  :focus{
+    outline: none;
+  }
+  .nos{
+    margin: auto;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+  }
+  .nosuno{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+  }
+  .nosdos{
+    padding: 20px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+  }
+  .nostres{
+    padding: 15px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+  }
+  .division{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 65px 350px 250px 400px 500px 150px;
+  grid-template-areas: 
+  "header header header header header header"
+  "galeria galeria galeria galeria galeria galeria"
+  "politica politica politica politica politica politica"
+  "notas notas notas notas notas notas"
+  "contacto contacto contacto contacto contacto contacto"
+  "footer footer footer footer footer footer";
+  }
+  .header{
+    grid-area: header;
+    background-color: rgb(235, 227, 227);
+  }
+  .galeria{
+    grid-area: galeria;
+    background-color: white;
+  }
+  .politica{
+    grid-area: politica;
+    background-color: white;
+  }
+  .notas{
+    grid-area: notas;
+  }
+  .notas{
+  margin: 5px 10px 5px 10px;
+  }
+  .contacto{
+    grid-area: contacto;
+    width: 550px;
+    height: 250;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer{
+    grid-area: footer;
+    height:auto;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  @media (max-width: 320px){
+    .division{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "header"
+      "galeria"
+      "politica"
+      "notas"
+      "contacto"
+      "footer";
+      }
+  }
+  @media (max-width: 480px){
+    .division{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "header header"
+      "galeria galeria"
+      "politica politica"
+      "notas notas"
+      "contacto contacto"
+      "footer footer";
+      }
+  }
+  @media (max-width: 600px){
+    .division{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "header header header"
+      "galeria galeria galeria"
+      "politica politica politica"
+      "notas notas notas"
+      "contacto contacto contacto"
+      "footer footer footer";
+      }
+  }
+  @media (max-width: 768px){
+    .division{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "header header header header"
+      "galeria galeria galeria galeria"
+      "politica politica politica politica"
+      "notas notas notas notas"
+      "contacto contacto contacto contacto"
+      "footer footer footer footer";
+      }
+  }
+  @media (max-width: 1025px){
+    .division{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "header header header header"
+      "galeria galeria galeria galeria"
+      "politica politica politica politica"
+      "notas notas notas notas"
+      "contacto contacto contacto contacto"
+      "footer footer footer footer";
+      }
+  }

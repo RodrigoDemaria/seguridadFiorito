@@ -1,0 +1,35 @@
+.contacto input,
+.contactouno textarea{
+  width: 100%;
+  padding: 5px 0px 5px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid black ;
+  font-size: 10px;
+  font-weight: 100;
+  .contactouno{
+    width: 100%;
+    padding: 25px 25px;
+    .contactouno label{
+      font-weight: 100;
+      .contactouno textarea{
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 90px;
+        .contactodos{
+          display: flex;
+          flex-direction: column;
+          .boton{
+            background-color: rgb(156, 218, 236);
+            .boton:hover{
+              background-color: rgb(187, 182, 182);
+              .boton:hover{
+                background-color: rgb(187, 182, 182);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
