@@ -16,4 +16,13 @@
 .nostres{
     @extend.nosotros;
     padding: 15px;
+    font-size: 20px;
+}
+
+@mixin colsiz ($color, $font-size) {
+    color: $color;
+    font-size: $font-size;
+}
+.tiser{
+    @include colsiz(rgb(19, 18, 18), 25px)
 }

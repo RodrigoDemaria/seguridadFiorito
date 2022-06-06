@@ -1,3 +1,16 @@
+@import "variable";
+@import "repsec";
+@import "contacto";
+@import "operacion";
+  
+  h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(148, 172, 224);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
   h2{
     font-size: 25px;
     font-weight: 600;
@@ -30,15 +43,6 @@
     margin: 5px 25px 50px 25px;
     border: 50px;
   }
-.asesor{
-  background-color: aqua;
-}
-
-  @import "variable";
-  @import "repsec";
-  @import "contacto";
-  @import "operacion"
-
   :focus{
     outline: none;
   }
@@ -49,11 +53,28 @@
     color: black;
     text-align: center;
   }
+ 
+.tiser{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aser{
+  background-color: rgb(168, 168, 248);
+  padding-top: 15px;
+}
+.med{
+  background-color: rgb(250, 173, 128);
+  padding-top: 15px;
+}
+.ges{
+  background-color: rgb(243, 142, 142);
+  padding-top: 15px;
+}
 
   .division{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 65px 350px 250px 400px 500px 150px;
+  grid-template-rows: 65px 350px 350px 350px 500px 150px;
   grid-template-areas: 
   "header header header header header header"
   "galeria galeria galeria galeria galeria galeria"

@@ -1,40 +1,3 @@
-h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #94ace0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-
-h3 {
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-h4 {
-  margin-left: 35px;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-  font-style: italic;
-  font-weight: bold;
-}
-
-img {
-  width: 220px;
-  height: 350px;
-}
-
-p {
-  color: black;
-  padding: 20px;
-  margin: 5px 25px 50px 25px;
-  border: 50px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -116,6 +79,75 @@ footer {
   background-color: #bbb6b6;
 }
 
+.nosotros, .nosuno, .nosdos, .nostres {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+}
+
+.nosdos {
+  padding: 15px;
+}
+
+.nostres {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.tiser {
+  color: #131212;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #94ace0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #94ace0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h4 {
+  margin-left: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
+
+img {
+  width: 220px;
+  height: 350px;
+}
+
+p {
+  color: black;
+  padding: 20px;
+  margin: 5px 25px 50px 25px;
+  border: 50px;
+}
+
 :focus {
   outline: none;
 }
@@ -128,33 +160,24 @@ footer {
   text-align: center;
 }
 
-.nosuno {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
+.tiser {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nosdos {
-  padding: 20px;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  text-align: center;
+.aser {
+  background-color: #a8a8f8;
+  padding-top: 15px;
 }
 
-.nostres {
-  padding: 15px;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  text-align: center;
+.med {
+  background-color: #faad80;
+  padding-top: 15px;
+}
+
+.ges {
+  background-color: #f38e8e;
+  padding-top: 15px;
 }
 
 .division {
@@ -162,8 +185,8 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 65px 350px 250px 400px 500px 150px;
-      grid-template-rows: 65px 350px 250px 400px 500px 150px;
+  -ms-grid-rows: 65px 350px 350px 350px 500px 150px;
+      grid-template-rows: 65px 350px 350px 350px 500px 150px;
       grid-template-areas: "header header header header header header"
  "galeria galeria galeria galeria galeria galeria"
  "politica politica politica politica politica politica"
