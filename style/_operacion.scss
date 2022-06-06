@@ -1,0 +1,19 @@
+.nosotros{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center; 
+}
+.nosuno{
+    @extend.nosotros;
+}
+.nosdos{
+    @extend.nosotros;
+    padding:15px;
+}
+.nostres{
+    @extend.nosotros;
+    padding: 15px;
+}

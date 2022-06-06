@@ -164,7 +164,12 @@ footer {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 65px 350px 250px 400px 500px 150px;
       grid-template-rows: 65px 350px 250px 400px 500px 150px;
-      grid-template-areas: "header header header header header header" "galeria galeria galeria galeria galeria galeria" "politica politica politica politica politica politica" "notas notas notas notas notas notas" "contacto contacto contacto contacto contacto contacto" "footer footer footer footer footer footer";
+      grid-template-areas: "header header header header header header"
+ "galeria galeria galeria galeria galeria galeria"
+ "politica politica politica politica politica politica"
+ "notas notas notas notas notas notas"
+ "contacto contacto contacto contacto contacto contacto"
+ "footer footer footer footer footer footer";
 }
 
 .header {
@@ -234,7 +239,12 @@ footer {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "header" "galeria" "politica" "notas" "contacto" "footer";
+        grid-template-areas: "header"
+ "galeria"
+ "politica"
+ "notas"
+ "contacto"
+ "footer";
   }
 }
 
@@ -244,7 +254,12 @@ footer {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "header header" "galeria galeria" "politica politica" "notas notas" "contacto contacto" "footer footer";
+        grid-template-areas: "header header"
+ "galeria galeria"
+ "politica politica"
+ "notas notas"
+ "contacto contacto"
+ "footer footer";
   }
 }
 
@@ -254,7 +269,12 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "header header header" "galeria galeria galeria" "politica politica politica" "notas notas notas" "contacto contacto contacto" "footer footer footer";
+        grid-template-areas: "header header header"
+ "galeria galeria galeria"
+ "politica politica politica"
+ "notas notas notas"
+ "contacto contacto contacto"
+ "footer footer footer";
   }
 }
 
@@ -264,7 +284,12 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "header header header header" "galeria galeria galeria galeria" "politica politica politica politica" "notas notas notas notas" "contacto contacto contacto contacto" "footer footer footer footer";
+        grid-template-areas: "header header header header"
+ "galeria galeria galeria galeria"
+ "politica politica politica politica"
+ "notas notas notas notas"
+ "contacto contacto contacto contacto"
+ "footer footer footer footer";
   }
 }
 
@@ -274,7 +299,12 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "header header header header" "galeria galeria galeria galeria" "politica politica politica politica" "notas notas notas notas" "contacto contacto contacto contacto" "footer footer footer footer";
+        grid-template-areas: "header header header header"
+ "galeria galeria galeria galeria"
+ "politica politica politica politica"
+ "notas notas notas notas"
+ "contacto contacto contacto contacto"
+ "footer footer footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
