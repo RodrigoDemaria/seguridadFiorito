@@ -23,6 +23,7 @@
     font-size: 25px;
     font-weight: 600;
     color: black;
+    margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -57,18 +58,24 @@
 .tiser{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
 .aser{
-  background-color: rgb(168, 168, 248);
+  background-color: rgb(146, 146, 170);
   padding-top: 15px;
 }
 .med{
-  background-color: rgb(250, 173, 128);
+  background-color: rgb(250, 150, 92);
   padding-top: 15px;
 }
 .ges{
   background-color: rgb(243, 142, 142);
   padding-top: 15px;
+}
+.parser{
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
   .division{
@@ -89,17 +96,12 @@
   }
   .galeria{
     grid-area: galeria;
-    background-color: white;
   }
   .politica{
     grid-area: politica;
-    background-color: white;
   }
   .notas{
     grid-area: notas;
-  }
-  .notas{
-  margin: 5px 10px 5px 10px;
   }
   .contacto{
     grid-area: contacto;
@@ -121,7 +123,6 @@
   @media (max-width: 320px){
     .division{
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
       grid-template-areas: 
       "header"
       "galeria"
@@ -129,12 +130,11 @@
       "notas"
       "contacto"
       "footer";
-      }
+      }  
   }
   @media (max-width: 480px){
     .division{
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
       grid-template-areas: 
       "header header"
       "galeria galeria"
@@ -147,7 +147,6 @@
   @media (max-width: 600px){
     .division{
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: 
       "header header header"
       "galeria galeria galeria"
@@ -160,7 +159,6 @@
   @media (max-width: 768px){
     .division{
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-areas: 
       "header header header header"
       "galeria galeria galeria galeria"
@@ -172,8 +170,7 @@
   }
   @media (max-width: 1025px){
     .division{
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: 
       "header header header header"
       "galeria galeria galeria galeria"

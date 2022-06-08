@@ -124,6 +124,7 @@ h3 {
   font-size: 25px;
   font-weight: 600;
   color: black;
+  margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -163,21 +164,28 @@ p {
 .tiser {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
 
 .aser {
-  background-color: #a8a8f8;
+  background-color: #9292aa;
   padding-top: 15px;
 }
 
 .med {
-  background-color: #faad80;
+  background-color: #fa965c;
   padding-top: 15px;
 }
 
 .ges {
   background-color: #f38e8e;
   padding-top: 15px;
+}
+
+.parser {
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .division {
@@ -208,7 +216,6 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: galeria;
-  background-color: white;
 }
 
 .politica {
@@ -216,7 +223,6 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: politica;
-  background-color: white;
 }
 
 .notas {
@@ -224,10 +230,6 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: notas;
-}
-
-.notas {
-  margin: 5px 10px 5px 10px;
 }
 
 .contacto {
@@ -260,8 +262,6 @@ p {
   .division {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas: "header"
  "galeria"
  "politica"
@@ -275,8 +275,6 @@ p {
   .division {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         grid-template-areas: "header header"
  "galeria galeria"
  "politica politica"
@@ -290,8 +288,6 @@ p {
   .division {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "header header header"
  "galeria galeria galeria"
  "politica politica politica"
@@ -305,8 +301,6 @@ p {
   .division {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "header header header header"
  "galeria galeria galeria galeria"
  "politica politica politica politica"
@@ -318,10 +312,8 @@ p {
 
 @media (max-width: 1025px) {
   .division {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: "header header header header"
  "galeria galeria galeria galeria"
  "politica politica politica politica"
